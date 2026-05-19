@@ -1,7 +1,7 @@
 const appRoutes = [
     {
         path: '/',
-        element: <div>Home</div>,
+        element: <div>Inicio</div>,
         children : [
             {
                 path: "about-us",
