@@ -1,0 +1,15 @@
+:root {
+  --font-primary: 'Noto Serif', serif;
+
+  --primary: #65001E;
+  --primary-foreground: #F7F3EA;
+
+  --secondary: #000000;
+
+  --background: #F7F3EA;
+  --foreground: #2C1810;
+
+  --muted-foreground: #8B7355;
+  --border: #D4C4A8;
+  --accent: #C4A882;
+}
