@@ -1,8 +1,19 @@
-import { useLocation } from "react-router"
+import { NavLink } from "react-router";
+import { links } from "./Links";
+import styles from "./Navbar.module.css";
 
 export default function NavLinks() {
-  const location = useLocation() 
-  return (
-    <div>Links</div>
-  )
+  return links.map((link) => {
+    return (
+      <NavLink
+        key={link.path}
+        className={({ isActive }) =>
+          `${styles.link} ${isActive ? styles.active : ""}`
+        }
+        to={link.path}
+      >
+        {link.title}
+      </NavLink>
+    );
+  });
 }

@@ -1,8 +1,4 @@
 
-const sizes = {
-  menu:22,
-}
-
 export const links = [
   {
     id: 1,
@@ -11,16 +7,11 @@ export const links = [
   },
   {
     id: 2,
-    title: "Sobre nosotros",
-    path: "/aboutus",
+    title: "Nosotros",
+    path: "/about-us",
   },
   {
     id: 3,
-    title: "Productos",
-    path: "/products",
-  },
-  {
-    id: 4,
     title: "Contacto",
     path: "/contact",
   },
