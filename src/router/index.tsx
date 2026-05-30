@@ -1,11 +1,10 @@
 import { useRoutes } from "react-router";
-import appRoutes from "./app";
+import appRouter from "./app";
 
-
-export default function AppRoutes() {
+export default function AppRouter() {
   return (
     <>
-        {useRoutes([...appRoutes])}
+        {useRoutes([...appRouter])}
     </>
   )
 }

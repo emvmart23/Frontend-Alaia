@@ -1,11 +1,17 @@
-const appRoutes = [
+import { AppLayout } from "../components/layout/index";
+
+const appRouter = [
     {
         path: '/',
-        element: <div>Inicio</div>,
+        element: <AppLayout/>,
         children : [
             {
+                path: "/",
+                element: <div>Inicio</div>
+            },
+            {
                 path: "about-us",
-                element: <div>Sobre nosotros</div>
+                element: <div>Nosotros</div>
             },
             {
                 path: "contact",
@@ -19,4 +25,4 @@ const appRoutes = [
     }
 ]
 
-export default appRoutes;
+export default appRouter;
