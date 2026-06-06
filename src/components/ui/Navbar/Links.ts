@@ -15,4 +15,9 @@ export const links = [
     title: "Contacto",
     path: "/contact",
   },
+  {
+    id: 4,
+    title: "Categorias",
+    path: "/categories",
+  }
 ];

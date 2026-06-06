@@ -1,8 +1,8 @@
 import NavLinks from "./NavLinks";
 import styles from "./Navbar.module.css";
-import Logo from "../../icons/logo";
+import { Logo } from "../../icons/logo";
 import InputSearch from "../InputSearch";
-import { ShoppingBag } from "lucide-react";
+import { Heart, ShoppingBag } from "lucide-react";
 import Button from "../Button";
 
 export default function Navbar() {
@@ -23,6 +23,7 @@ export default function Navbar() {
             >
               Inicia sesion
           </Button>
+          <Heart className={styles.heart}/>
           <ShoppingBag className={styles.bag}/>
         </div>
       </nav>
