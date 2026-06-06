@@ -1,5 +1,6 @@
 import type { ComponentProps } from "react";
 import styles from "./Button.module.css";
+import clsx from "clsx";
 
 interface ButtonProps extends ComponentProps<"button"> {
   variant?: "primary" | "secondary";
@@ -17,7 +18,7 @@ export default function Button({
   return (
     <button
       type={type}
-      className={`${styles.button} ${styles[variant]} ${outline ? styles.outline : ""} ${className}`}
+      className={clsx(styles.button, styles[variant], outline && styles.outline, className)}
       {...rest}
     >
       {children}
