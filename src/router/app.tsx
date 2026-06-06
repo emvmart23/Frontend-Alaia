@@ -1,4 +1,5 @@
 import { AppLayout } from "../components/layout/index";
+import { Home } from "../pages/index";
 
 const appRouter = [
     {
@@ -7,7 +8,7 @@ const appRouter = [
         children : [
             {
                 path: "/",
-                element: <div>Inicio</div>
+                element: <Home/>,
             },
             {
                 path: "about-us",
