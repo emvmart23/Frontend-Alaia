@@ -8,9 +8,10 @@ interface Props {
 
 interface CarrouselProps {
   images: Props[];
+  children?: React.ReactNode;
 }
 
-export default function Carrousel({ images }: CarrouselProps) {
+export default function Carrousel({ images, children }: CarrouselProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextClick = () => {
@@ -20,23 +21,27 @@ export default function Carrousel({ images }: CarrouselProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       handleNextClick();
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [currentImageIndex]);
 
   return (
-    <div className={styles.imageContainer}>
-      {images.map((image) => {
-        console.log('index', image.id);
-        return (
+    <section className={styles.imageContainer}>
+      {children && <div className={styles.container}>{children}</div>}
+      {/* quitar este estilo inline */}
+      <div
+        className={styles.sliders}
+        style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
           <img
-            alt={image.url}
+            key={index}
             src={image.url}
-            className={`${styles.image} ${currentImageIndex === image.id ? styles.block : styles.hidden}`}
-            key={image.id}
+            alt={image.url}
+            className={styles.image}
           />
-        );
-      })}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 }

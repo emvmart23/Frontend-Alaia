@@ -1,21 +1,11 @@
 import { Search } from "lucide-react";
 import styles from "./InputSearch.module.css";
+import Input from "../Input";
 
-interface Props {
-  className?: string;
-  placeholder?: string;
-}
-
-export default function InputSearch({
-  placeholder = "Buscar",
-}: Props) {
+export default function InputSearch() {
   return (
     <div className={styles.container}>
-      <input
-        type="text"
-        placeholder={placeholder}
-        className={styles.input}
-      />
+      <Input type="text" placeholder="Buscar" className={styles.input} />
       <Search className={styles.search} />
     </div>
   );

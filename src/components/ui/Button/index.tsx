@@ -11,7 +11,7 @@ export default function Button({
   children,
   variant = "primary",
   outline,
-  className = "",
+  className,
   type = "button",
   ...rest
 }: ButtonProps) {

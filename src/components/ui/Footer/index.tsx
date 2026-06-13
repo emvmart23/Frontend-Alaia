@@ -1,7 +1,7 @@
+import { footerData } from "../../../mockData/footer";
+import styles from "./Footer.module.css";
 import { Logo } from "../../icons/logo";
 import Button from "../Button";
-import styles from "./Footer.module.css";
-import { footerData } from "../../../mockData/footer";
 import Input from "../Input";
 
 export default function Footer() {

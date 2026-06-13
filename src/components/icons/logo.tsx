@@ -3,7 +3,7 @@ interface LogoProps {
   width?: string;
 }
 
-export function Logo({ height, width }: LogoProps) {
+function Logo({ height, width }: LogoProps) {
   return (
     <svg
       width={width || "100"}
@@ -37,7 +37,7 @@ export function Logo({ height, width }: LogoProps) {
   );
 }
 
-export function FacebookIcon({ height, width }: LogoProps) {
+function FacebookIcon({ height, width }: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export function FacebookIcon({ height, width }: LogoProps) {
   );
 }
 
-export function InstagramIcon({ height, width }: LogoProps) {
+function InstagramIcon({ height, width }: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -126,3 +126,5 @@ export function InstagramIcon({ height, width }: LogoProps) {
     </svg>
   );
 }
+
+export { Logo, FacebookIcon, InstagramIcon };
