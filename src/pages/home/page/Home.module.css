@@ -1,0 +1,38 @@
+.title {
+  font-size: 2.5rem;
+  color: #f5f0e8;
+  text-shadow: 0 2px 12px rgba(83, 63, 60, 50);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.buttonFilled {
+  color: #3d2b1f;
+  background: var(--background);
+  border: none;
+  backdrop-filter: blur(4px);
+}
+
+.featuredProducts {
+  padding: var(--space-8) var(--space-16);
+}
+
+.product {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.category {
+  background: var(--primary-foreground);
+  padding: var(--space-8) var(--space-4);
+  gap: var(--space-12);
+  display: grid;
+  justify-items:center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

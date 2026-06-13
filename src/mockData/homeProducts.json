@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Aretes",
+      "description": "diseños unicos para cada ocasion"
+    },
+    {
+      "id": 2,
+      "name": "Collares",
+      "description": "diseños unicos para cada ocasion"
+    },
+    {
+      "id": 3,
+      "name": "Anillos",
+      "description": "diseños unicos para cada ocasion"
+    }
+  ],
+  "saleProducts": [
+    {
+      "id": 1,
+      "name": "Collar sdsc",
+      "price": 19.99,
+      "salePrice": 10.0,
+      "discountPercentage": 50,
+      "image": "https://cdn.shopify.com/s/files/1/0277/6262/2567/files/lucy-williams-t-bar-hex-pendant-necklace-18ct-gold-plated-necklaces-missoma-857527.webp?v=1756463810&width=820",
+      "category": "collares"
+    },
+    {
+      "id": 2,
+      "name": "Collar sdsc",
+      "price": 19.99,
+      "salePrice": 10.0,
+      "discountPercentage": 50,
+      "image": "https://cdn.shopify.com/s/files/1/0277/6262/2567/files/lucy-williams-t-bar-hex-pendant-necklace-18ct-gold-plated-necklaces-missoma-857527.webp?v=1756463810&width=820",
+      "category": "collares"
+    },
+    {
+      "id": 3,
+      "name": "Collar sdsc",
+      "price": 19.99,
+      "salePrice": 10.0,
+      "discountPercentage": 50,
+      "image": "https://cdn.shopify.com/s/files/1/0277/6262/2567/files/lucy-williams-t-bar-hex-pendant-necklace-18ct-gold-plated-necklaces-missoma-857527.webp?v=1756463810&width=820",
+      "category": "collares"
+    },
+    {
+      "id": 4,
+      "name": "Collar sdsc",
+      "price": 19.99,
+      "salePrice": 10.0,
+      "discountPercentage": 50,
+      "image": "https://cdn.shopify.com/s/files/1/0277/6262/2567/files/lucy-williams-t-bar-hex-pendant-necklace-18ct-gold-plated-necklaces-missoma-857527.webp?v=1756463810&width=820",
+      "category": "collares"
+    },
+    {
+      "id": 5,
+      "name": "Collar sdsc",
+      "price": 19.99,
+      "salePrice": 10.0,
+      "discountPercentage": 50,
+      "image": "https://cdn.shopify.com/s/files/1/0277/6262/2567/files/lucy-williams-t-bar-hex-pendant-necklace-18ct-gold-plated-necklaces-missoma-857527.webp?v=1756463810&width=820",
+      "category": "collares"
+    }
+  ]
+}
