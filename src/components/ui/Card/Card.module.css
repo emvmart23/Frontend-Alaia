@@ -3,7 +3,7 @@
   display: grid;
   gap: var(--space-4);
   overflow: hidden;
-  border-radius: var(--radius-lg);
+  border-radius: var(--border-radius, var(--radius-lg));
   box-shadow: var(--box-shadow, 0 0 0 1px var(--secondary));
 }
 

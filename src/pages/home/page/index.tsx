@@ -51,15 +51,15 @@ export default function Home() {
         <CategoryCard />
         <CategoryCard />
       </section>
-      <section className={styles.cardBrand}>
-        <Card>
+      <section className={styles.brand}>
+        <Card className={styles.cardBrand}>
           <CardHeader>
-            <img src="" alt="" />
+            <img src="https://res.cloudinary.com/dkfoa4nu2/image/upload/v1781591231/brand-1_asdlc5.jpg" alt="" className={styles.image}/>
           </CardHeader>
           <CardFooter>
-            <div>
+            <div className={styles.container}>
               <span>50+</span>
-              <span>Nuevos diseños cada temporada</span>
+              <span>más de 50 piezas de joyería únicas</span>
             </div>
             <GemIcon/>
           </CardFooter>
