@@ -1,15 +1,8 @@
 import { useState } from "react";
-import {
-  Button,
-  Card,
-  CardFooter,
-  CardHeader,
-  Carrousel,
-} from "../../../components/ui";
-import { CardProduct, CategoryCard } from "../components";
+import { BrandSection, CardProduct, CategoryCard } from "../components";
 import styles from "../page/Home.module.css";
 import homeProducts from "../../../mockData/homeProducts.json";
-import { GemIcon } from "lucide-react";
+import { Button, Carrousel } from "../../../components/ui";
 
 const imgs = [
   {
@@ -34,15 +27,14 @@ export default function Home() {
       <Carrousel images={imgs}>
         <h2 className={styles.title}>Intenta algo nuevo</h2>
         <div className={styles.buttonContainer}>
-          <Button className={styles.buttonFilled}>Ver categorias</Button>
-          <Button className={styles.buttonFilled}>Ver categorias</Button>
+          <Button className={styles.buttonFilled}>Explorar colección</Button>
         </div>
       </Carrousel>
       <section className={styles.featuredProducts}>
         <h2>Esenciales de verano</h2>
         <div className={styles.product}>
           {products.saleProducts?.map((product) => (
-            <CardProduct key={product.id} {...product} />
+            <CardProduct key={product.id} product={product} />
           ))}
         </div>
       </section>
@@ -52,18 +44,7 @@ export default function Home() {
         <CategoryCard />
       </section>
       <section className={styles.brand}>
-        <Card className={styles.cardBrand}>
-          <CardHeader>
-            <img src="https://res.cloudinary.com/dkfoa4nu2/image/upload/v1781591231/brand-1_asdlc5.jpg" alt="" className={styles.image}/>
-          </CardHeader>
-          <CardFooter>
-            <div className={styles.container}>
-              <span>50+</span>
-              <span>más de 50 piezas de joyería únicas</span>
-            </div>
-            <GemIcon/>
-          </CardFooter>
-        </Card>
+        <BrandSection />
       </section>
     </>
   );

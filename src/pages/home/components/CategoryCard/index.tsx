@@ -1,4 +1,4 @@
-import styles from "./Categoy.module.css"
+import styles from "./Category.module.css"
 import { BellRing } from "lucide-react";
 import {
   Card,

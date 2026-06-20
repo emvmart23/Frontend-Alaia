@@ -1,0 +1,30 @@
+.cardBrand {
+  --box-shadow: 0;
+  --border-radius:0;
+  align-content: space-between;
+}
+
+.footerBrand {
+  border-top: 1px solid var(--muted);
+  padding:0;
+  justify-content: space-between;
+  padding: 0.5rem 0 0 0;
+  height: 69px;
+}
+
+.image {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  font-size: 1.85rem;
+}
+
+.container span:nth-child(2) {
+  font-size:var(--text-sm)
+}
+
+.button {
+  width: 60%;
+}

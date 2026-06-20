@@ -19,9 +19,9 @@
 }
 
 .featuredProducts {
-  padding: var(--space-8) var(--space-16);
+  padding: 0 var(--space-8);
   display: grid;
-  gap:var(--space-4)
+  gap: var(--space-4);
 }
 
 .product {
@@ -35,27 +35,14 @@
   padding: var(--space-8) var(--space-4);
   gap: var(--space-12);
   display: grid;
-  justify-items:center;
+  justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: var(--space-16) 0;
 }
 
 .brand {
-  padding:var(--space-4)
-}
-
-.cardBrand {
-  box-shadow: none;
-  --border-radius:none;
-}
-
-.image {
-  width: 100%;
-}
-
-.container {
+  padding: var(--space-4);
   display: grid;
-}
-
-.container span:nth-child(2) {
-  font-size:var(--text-sm)
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
 }

@@ -10,10 +10,12 @@ import {
 } from "../../../../components/ui";
 
 interface Props {
-  name:string
+  product: {
+    name: string
+  }
 }
 
-export default function CardProduct({name, } :Props) {
+export default function CardProduct( { product } :Props) {
   return (
     <Card className={styles.cards}>
       <CardHeader className={styles.header}>
@@ -32,7 +34,7 @@ export default function CardProduct({name, } :Props) {
         />
       </CardHeader>
       <CardContent className={styles.content}>
-        <CardTitle>{name}</CardTitle>
+        <CardTitle>{product.name}</CardTitle>
         <CardDescription>18ct Gold Plated</CardDescription>
         <div className={styles.priceSection}>
           <s>£175.00</s>

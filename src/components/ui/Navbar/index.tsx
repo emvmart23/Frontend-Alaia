@@ -8,23 +8,21 @@ import Button from "../Button";
 export default function Navbar() {
   return (
     <header className={styles.header}>
-      <figure className={styles.logo}>
-        <Logo />
-      </figure>
+      <section className={styles.announcemmentBar}>
+        <p>Ahorra un 20% con conjuntos apilables. Compra ahora.</p>
+      </section>
       <nav className={styles.nav}>
-        <InputSearch />
+        <Logo />
         <div className={styles.links}>
           <NavLinks />
         </div>
         <div className={styles.actions}>
-          <Button
-            variant="primary"
-            outline={true} 
-            >
-              Inicia sesion
+        <InputSearch />
+          <Button variant="primary" outline={true} className={styles.button}>
+            Inicia sesion
           </Button>
-          <Heart className={styles.heart}/>
-          <ShoppingBag className={styles.bag}/>
+          <Heart className={styles.heart} />
+          <ShoppingBag className={styles.bag} />
         </div>
       </nav>
     </header>
