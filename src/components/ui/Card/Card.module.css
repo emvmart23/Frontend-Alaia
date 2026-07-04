@@ -40,6 +40,6 @@
   display: flex;
   align-items: center;
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-  border: var(--border,1px solid var(--muted));
+  border: var(--border-card,1px solid var(--muted));
   padding: var(--padding,var(--space-4));
 }

@@ -1,15 +1,9 @@
 import type { ComponentProps } from "react";
 import styles from "./Input.module.css";
+import clsx from "clsx";
 
-interface InputProps extends ComponentProps<"input"> {
-  placeholder?: string;
-}
+type InputProps =  ComponentProps<"input">;
 
-export default function Input({
-  placeholder = "Placeholder",
-  ...props
-}: InputProps) {
-  return (
-    <input className={styles.input} placeholder={placeholder} {...props} />
-  );
+export default function Input({className, ...props}: InputProps) {
+  return <input className={clsx(styles.input, className)} {...props} />;
 }

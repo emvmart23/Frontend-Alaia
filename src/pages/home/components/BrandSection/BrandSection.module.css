@@ -5,6 +5,7 @@
 }
 
 .footerBrand {
+  --border-card: none;
   border-top: 1px solid var(--muted);
   padding:0;
   justify-content: space-between;

@@ -1,0 +1,31 @@
+.channels {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.list {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: auto 1fr;
+    list-style-type: none;
+}
+
+.item {
+    display: grid;
+    gap: var(--space-2);
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-size: var(--text-sm);
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-shrink: 0; */
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--muted);
+    padding: var(--space-2);
+    border-radius:50%;
+}

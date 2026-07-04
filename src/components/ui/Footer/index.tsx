@@ -35,7 +35,7 @@ export default function Footer() {
           <div className={styles.divider}></div>
           <div className={styles.subscribe}>
             <h3>Únete a Alaia</h3>
-            <Input type="email" placeholder="Tu correo" readOnly />
+            <Input type="email" placeholder="Tu correo" readOnly/>
             <Button className={styles.button} outline={true} type="button">
               Suscríbete ahora
             </Button>

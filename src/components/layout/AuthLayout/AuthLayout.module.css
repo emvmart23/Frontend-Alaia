@@ -1,0 +1,34 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection {
+  width: 50%;
+}
+
+.image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.formSection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--d);
+}
+
+/* @media (min-width: 768px) {
+  .imageSection {
+    display: block;
+  }
+} */

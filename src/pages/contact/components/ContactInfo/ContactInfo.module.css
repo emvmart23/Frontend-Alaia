@@ -1,0 +1,27 @@
+.contactInfo {
+  display:grid;
+  align-content: start;
+  gap: var(--space-8);
+}
+
+.title {
+  font-size: var(--text-lg);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: start;
+  gap: var(--space-1);
+}
+
+.address {
+  margin: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--secondary);
+}

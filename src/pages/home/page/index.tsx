@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useRef } from "react";
 import { BrandSection, CardProduct, CategoryCard } from "../components";
 import styles from "../page/Home.module.css";
-import homeProducts from "../../../mockData/homeProducts.json";
 import { Button, Carrousel } from "../../../components/ui";
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 
 const imgs = [
   {
@@ -20,7 +20,16 @@ const imgs = [
 ];
 
 export default function Home() {
-  const [products, setProducts] = useState(homeProducts);
+  // const [products, setProducts] = useState(homeProducts);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handlerscrollLeft = () => {
+    if (containerRef.current) containerRef.current.scrollLeft -= 500;
+  };
+
+  const handlerscrollRight = () => {
+    if (containerRef.current) containerRef.current.scrollLeft += 500;
+  };
 
   return (
     <>
@@ -32,15 +41,15 @@ export default function Home() {
       </Carrousel>
       <section className={styles.featuredProducts}>
         <h2>Esenciales de verano</h2>
-        <div className={styles.product}>
-          {products.saleProducts?.map((product) => (
-            <CardProduct key={product.id} product={product} />
-          ))}
+        <div className={styles.productSlider} ref={containerRef}>
+          <div className={styles.sliderIcons}>
+            <ChevronLeftIcon size={25} onClick={handlerscrollLeft} />
+            <ChevronRightIcon size={25} onClick={handlerscrollRight} />
+          </div>
+          <CardProduct />
         </div>
       </section>
       <section className={styles.category}>
-        <CategoryCard />
-        <CategoryCard />
         <CategoryCard />
       </section>
       <section className={styles.brand}>

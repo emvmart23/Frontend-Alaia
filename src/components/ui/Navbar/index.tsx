@@ -1,7 +1,7 @@
 import NavLinks from "./NavLinks";
 import styles from "./Navbar.module.css";
 import { Logo } from "../../icons/logo";
-import InputSearch from "../InputSearch";
+import SearchInput from "../SearchInput";
 import { Heart, ShoppingBag } from "lucide-react";
 import Button from "../Button";
 
@@ -17,7 +17,7 @@ export default function Navbar() {
           <NavLinks />
         </div>
         <div className={styles.actions}>
-        <InputSearch />
+        <SearchInput />
           <Button variant="primary" outline={true} className={styles.button}>
             Inicia sesion
           </Button>

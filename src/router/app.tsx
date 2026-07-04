@@ -1,5 +1,5 @@
 import { AppLayout } from "../components/layout/index";
-import { Home } from "../pages/index";
+import { Home, Contact} from "../pages/index";
 
 const appRouter = [
     {
@@ -16,7 +16,7 @@ const appRouter = [
             },
             {
                 path: "contact",
-                element: <div>Contacto</div>
+                element: <Contact/>
             },
             {
                 path:"*",

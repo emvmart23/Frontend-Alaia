@@ -1,10 +1,18 @@
 .input {
+  width: var(--width, 100%);
   border-radius: 6px;
-  border: none;
-  padding: 0.8rem 1rem;
-  background: white;
+  border: var(--input-border,1px solid var(--muted) );
+  padding: var(--input-padding, 0.8rem 1rem);
+  background: var(--input-bg, white);
+  font-size: var(--input-fs, var(--text-base));
 }
 
-input::placeholder {
+.input::placeholder {
   font-size: var(--text-sm);
+}
+
+.input:focus {
+  outline: none;
+  border-width: 0.1rem;
+  border-color: var(--input-bc, #000);
 }

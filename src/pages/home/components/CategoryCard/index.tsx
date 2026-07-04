@@ -1,4 +1,4 @@
-import styles from "./Category.module.css"
+import styles from "./Category.module.css";
 import { BellRing } from "lucide-react";
 import {
   Card,
@@ -9,13 +9,17 @@ import {
 
 export default function CategoryCard() {
   return (
-    <Card className={styles.card}>
-      <CardContent className={styles.cardContet}>
-        <BellRing size={50}/>
-        {/* <img src="" alt="" /> */}
-        <CardTitle>Collares</CardTitle>
-        <CardDescription>Diseños únicos para cada ocasión</CardDescription>
-      </CardContent>
-    </Card>
+    <>
+      {[1, 2, 3].map((_, item) => (
+        <Card key={item} className={styles.card}>
+          <CardContent className={styles.cardContet}>
+            <BellRing size={50} />
+            {/* <img src="" alt="" /> */}
+            <CardTitle>Collares</CardTitle>
+            <CardDescription>Diseños únicos para cada ocasión</CardDescription>
+          </CardContent>
+        </Card>
+      ))}
+    </>
   );
 }

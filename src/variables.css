@@ -11,11 +11,15 @@
   --destructive: oklch(57.827% 0.23533 28.271);
 
   --muted: #8080806e;
-  --border: #d4c4a8;
   --accent: #c4a882;
 
   --ring: 0 0 0 1px var(--secondary);
   --overlay-spacing: 0.9rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
 
   /* radios */
   --radius-xs: 0.125rem;
@@ -27,7 +31,8 @@
   --radius-3xl: 1.5rem;
 
   /* tipografía */
-  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.84rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
