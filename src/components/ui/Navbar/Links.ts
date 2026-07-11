@@ -1,4 +1,3 @@
-
 export const links = [
   {
     id: 1,
@@ -19,5 +18,5 @@ export const links = [
     id: 4,
     title: "Categorias",
     path: "/categories",
-  }
+  },
 ];

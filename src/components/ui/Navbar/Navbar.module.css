@@ -51,11 +51,11 @@ header {
   gap: 1.5rem;
 }
 
-.bag,
-.heart {
+.icon {
   color: var(--primary);
 }
 
 .button {
   font-size: var(--text-sm);
+  padding: 0;
 }
