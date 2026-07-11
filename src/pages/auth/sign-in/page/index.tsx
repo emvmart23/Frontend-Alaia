@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import { Button, Input } from "../../../../components/ui";
-import styles from "./SignIn.module.css";
+import { Button, Input, InputPassword } from "../../../../components/ui";
+import styles from "../../Auth.module.css";
 export default function SignIn() {
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function SignIn() {
 
         <div className={styles.formField}>
           <label htmlFor="password">Contraseña</label>
-          <Input id="password" type="password" placeholder="Tu contraseña" />
+          <InputPassword placeholder="Tu contraseña"/>
           <Link to="/auth/forgot-password" className={styles.links}>
             ¿Olvidaste tu contraseña?
           </Link>
@@ -23,7 +23,7 @@ export default function SignIn() {
 
         <Button className={styles.submitButton}>Iniciar sesión</Button>
 
-        <p className={styles.registerText}>
+        <p>
           ¿No tienes cuenta?{" "}
           <Link to="/auth/sign-up" className={styles.links}>
             Crear cuenta
