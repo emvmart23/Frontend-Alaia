@@ -1,5 +1,5 @@
 import { Search } from "lucide-react";
-import styles from "./InputSearch.module.css";
+import styles from "./SearchInput.module.css";
 import Input from "../Input";
 
 export default function SearchInput() {
