@@ -30,7 +30,7 @@ export default function InputPassword({
         className={styles.button}
         onClick={() => setShowPassword(!showPassword)}
       >
-        {showPassword ? <EyeIcon /> : <EyeOffIcon />}
+        {showPassword ? <EyeOffIcon /> : <EyeIcon />}
       </Button>
     </div>
   );
