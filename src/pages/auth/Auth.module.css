@@ -2,9 +2,10 @@
     min-width: 32rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-8);
+    gap: var(--space-6);
     box-shadow: 0 5px 10px var(--muted);
-    padding: var(--space-8);
+    padding: var(--space-8); 
+    box-sizing: border-box;
 }
 
 .submitButton {
@@ -21,7 +22,7 @@
 
 .form {
     display: grid;
-    gap: var(--space-8);
+    gap: var(--space-6);
     font-size: var(--text-sm);
 }
 
@@ -41,4 +42,16 @@
 
 .links:hover {
   text-decoration: underline;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center ;
+    text-decoration: none;
+    color: var(--primary);
+} 
+ 
+.header {
+    display:flex;
+    gap:var(--space-2);
 }
