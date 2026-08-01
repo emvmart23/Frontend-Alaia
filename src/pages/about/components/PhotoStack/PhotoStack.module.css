@@ -1,0 +1,23 @@
+.photoStack {
+  position: relative;
+  height: 480px;
+}
+
+.photoMain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.photoSmall {
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  height: 220px;
+  object-fit: cover;
+  z-index: 0;
+}

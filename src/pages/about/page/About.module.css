@@ -1,0 +1,122 @@
+/* Definimos la paleta como variables CSS a nivel de módulo.
+   Si ya tienes estas variables definidas globalmente (ej. en globals.css
+   o en tu config de Tailwind), borra este bloque :root y usa esas en su lugar
+   para no tener el mismo color definido en dos sitios distintos. */
+:root {
+  --cream: #f7f1e7;
+  --cream-2: #fbf7f0;
+  --wine: #6e1e2b;
+  --wine-dark: #4e1520;
+  --charcoal: #2b2521;
+  --muted: #7a7168;
+  --gold: #b08d3e;
+  --line: #e2d8c6;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 60px 20px 10px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.pageTitle h1 {
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--wine-dark);
+}
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.story h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--wine-dark);
+  margin-bottom: 24px;
+}
+
+.story p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--charcoal);
+  margin-bottom: 18px;
+}
+
+.signature {
+  margin-top: 28px;
+}
+
+.signatureName {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--wine);
+}
+
+.signatureRole {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+
+.quoteSection {
+  padding: 90px 60px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bigQuote {
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.5;
+  color: var(--wine-dark);
+}
+
+@media (max-width: 800px) {
+  .aboutSection {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+    gap: 40px;
+  }
+  .photoStack {
+    height: 340px;
+  }
+  .communitySection {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+    gap: 30px;
+  }
+  .instagramSection {
+    padding: 0 24px 60px;
+  }
+  .instagramGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+}
