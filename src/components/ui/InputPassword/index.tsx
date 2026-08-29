@@ -21,6 +21,7 @@ export default function InputPassword({
         id="password"
         className={clsx(className)}
         type={showPassword ? "text" : "password"}
+        autoComplete="current-password"
         placeholder={placeholder}
         disabled={disabled}
         {...rest}

@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 10rem;
+  user-select: none;
+}
+
+.icon {
+  color: var(--primary);
+  cursor: pointer;
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: var(--space-2);
+  width: 100%;
+  border-radius: var(--radius-md);
+  background-color: var(--white);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.menuGroup {
+  padding: 0.25rem 0;
+}
+
+.itemButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.itemButton:hover {
+  background-color: var(--muted-light);
+  color: #111827;
+}
+
+.itemButton:focus {
+  outline: none;
+  background-color: #f3f4f6;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--muted-light);
+  margin: 6px 0;
+  width: 100%;
+}

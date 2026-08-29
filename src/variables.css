@@ -1,6 +1,7 @@
 :root {
   --font-primary: "Noto Serif", serif;
 
+  --white: #ffffff;
   --primary: #65001e;
   --primary-foreground: #f7f3ead7;
 
@@ -11,6 +12,7 @@
   --destructive: oklch(57.827% 0.23533 28.271);
 
   --muted: #8080806e;
+  --muted-light: #e5e7eb;
   --accent: #c4a882;
 
   --ring: 0 0 0 1px var(--secondary);
