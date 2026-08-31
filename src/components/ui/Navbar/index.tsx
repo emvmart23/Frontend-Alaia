@@ -1,8 +1,9 @@
-import NavLinks from "./NavLinks";
+import { navRoutes } from "./navRoutes";
 import styles from "./Navbar.module.css";
 import { Logo } from "../../icons/logo";
 import SearchInput from "../SearchInput";
 import NavActions from "./NavActions";
+import NavItems from "./navItems";
 
 export default function Navbar() {
   return (
@@ -13,7 +14,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Logo />
         <div className={styles.links}>
-          <NavLinks />
+          <NavItems links={navRoutes} />
         </div>
         <div className={styles.actions}>
           <SearchInput />

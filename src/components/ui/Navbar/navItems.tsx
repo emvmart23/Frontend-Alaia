@@ -1,12 +1,17 @@
 import { NavLink } from "react-router";
-import { links } from "./links";
 import styles from "./Navbar.module.css";
 
-export default function NavLinks() {
+interface Props {
+  id: number;
+  path: string;
+  title: string;
+}
+
+export default function NavItems({ links }: { links: Props[] }) {
   return links.map((link) => {
     return (
       <NavLink
-        key={link.path}
+        key={link.id}
         className={({ isActive }) =>
           `${styles.link} ${isActive ? styles.active : ""}`
         }

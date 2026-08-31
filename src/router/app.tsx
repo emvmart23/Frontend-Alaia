@@ -24,36 +24,33 @@ const appRouter = [
         path: "contact",
         element: <Contact />,
       },
-
-      /* --- RUTAS PROTEGIDAS DEL PERFIL --- */
       {
-        element: <Outlet />, // Verificación de autenticación
+        element: <Outlet />,
         children: [
           {
             path: "profile",
-            element: <ProfileLayout />, // Layout de pestañas
+            element: <ProfileLayout />,
             children: [
               {
-                index: true, // Ruta por defecto: /profile
+                index: true,
                 element: <><h1>Max</h1></>,
               },
               {
-                path: "orders", // /profile/orders
+                path: "orders",
                 element: <></>,
               },
               {
-                path: "addresses", // /profile/addresses
+                path: "addresses",
                 element: <></>,
               },
               {
-                path: "favorites", // /profile/favorites
+                path: "favorites",
                 element: <></>,
               },
             ],
           },
         ],
       },
-
       {
         path: "*",
         element: <div>404 Not Found</div>,
