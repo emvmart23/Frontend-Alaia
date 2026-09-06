@@ -1,0 +1,41 @@
+.datePickerContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.datePickerWrapper {
+  width: 100%;
+}
+
+.datePickerInput {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: var(--text-sm);
+  border-radius: 9px;
+  background: #f9fafb;
+  color: var(--gray);
+  border: 1px solid transparent;
+  outline: none;
+  caret-color: transparent;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.calendarIcon {
+  color: var(--gray);
+  position: absolute;
+  right: 0.5rem;
+  pointer-events: none;
+}
+
+.datePickerInput:enabled,
+.datePickerInput:enabled::placeholder {
+  cursor: pointer;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.datePickerWrapper:has(.datePickerInput:enabled) + .calendarIcon {
+  color: var(--secondary);
+}

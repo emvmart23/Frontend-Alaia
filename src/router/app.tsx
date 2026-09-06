@@ -6,6 +6,7 @@ import {
   Contact, 
   About, 
 } from "../pages";
+import Profile from "../pages/user/pages/profile/page";
 
 const appRouter = [
   {
@@ -28,12 +29,12 @@ const appRouter = [
         element: <Outlet />,
         children: [
           {
-            path: "profile",
+            path: "account",
             element: <ProfileLayout />,
             children: [
               {
                 index: true,
-                element: <><h1>Max</h1></>,
+                element: <Profile />,
               },
               {
                 path: "orders",

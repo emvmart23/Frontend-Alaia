@@ -1,20 +1,30 @@
+.nav {
+  font-size: var(--text-sm);
+  height: 3rem;
+  position: sticky;
+  top: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-bottom: 1px solid #D0BA98;  
+  animation: deslizarAbajo 0.4s ease-in-out forwards;
+  z-index: 1;
+}
+
 .links {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.nav {
-  font-size: var(--text-sm);
-  padding: 0 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #65001e;
-  box-shadow: 0 1px 0px 0px var(--muted);
+@keyframes deslizarAbajo {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

@@ -1,0 +1,71 @@
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatarContainer {
+  display: flex;
+  position: relative;
+  margin: 2rem 2rem 2rem 0;
+  align-items: center;
+  gap: var(--space-6);
+  width: 100%;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.changeImage {
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #6b1d2f;
+  border: 1px solid #6b1d2f;
+  border-radius: 6px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0.4rem;
+}
+
+
+.removeImage {
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #e53e3e;
+  border-radius: 6px;
+  font-size: var(--text-sm);
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.changeImage:hover, .removeImage:hover {
+  scale: 1.05;
+}
+
+.removeImage:hover {
+  background-color: #fff5f5;
+  border-color: #feb2b2;
+}
+
+.hiddenFileInput {
+  display: none;
+}

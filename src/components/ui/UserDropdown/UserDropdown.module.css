@@ -3,7 +3,7 @@
   display: inline-block;
   text-align: left;
   width: 10rem;
-  user-select: none;
+  font-family: inherit;
 }
 
 .icon {
@@ -38,7 +38,9 @@
   background: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.15s, color 0.15s;
+  font-family: inherit;
 }
 
 .itemButton:hover {
@@ -51,9 +53,3 @@
   background-color: #f3f4f6;
 }
 
-.divider {
-  border: none;
-  border-top: 1px solid var(--muted-light);
-  margin: 6px 0;
-  width: 100%;
-}

@@ -1,22 +1,22 @@
 export const navRoutes = [
   {
     id: 1,
-    title: "Inicio",
+    label: "Inicio",
     path: "/",
   },
   {
     id: 2,
-    title: "Nosotros",
+    label: "Nosotros",
     path: "/about-us",
   },
   {
     id: 3,
-    title: "Contacto",
+    label: "Contacto",
     path: "/contact",
   },
   {
     id: 4,
-    title: "Categorias",
+    label: "Categorias",
     path: "/categories",
   },
 ];

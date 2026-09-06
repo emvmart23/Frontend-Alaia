@@ -1,14 +1,14 @@
 import { Outlet } from "react-router";
 import SubNavbar from "../../ui/SubNavbar";
-import styles from "../AppLayout/AppLayout.module.css"
+import styles from "../ProfileLayout/ProfileLayout.module.css"
 
 export default function ProfileLayout() {
   return (
    <>
       <SubNavbar/>
-      <main className={styles.main}>
+      <section className={styles.section}>
         <Outlet />
-      </main>
+      </section>
     </>
   );
 };

@@ -40,6 +40,10 @@
   color: var(--primary);
 }
 
+.linkWhite {
+  color: var(--muted-light);
+}
+
 .active {
   border-bottom: 1px solid var(--primary);
 }

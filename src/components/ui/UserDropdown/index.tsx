@@ -1,18 +1,19 @@
 import { useState, type FocusEvent } from "react";
-import styles from "./Dropdown.module.css";
+import styles from "./UserDropdown.module.css";
 import { UserRound } from "lucide-react";
 import { Link } from "react-router";
 import api from "../../../services/api";
 import { useAppDispatch } from "../../../store/store";
 import { logout } from "../../../store/slices/auth";
 import { toast } from "sonner";
+import Divider from "../Divider";
 
 interface DropdownItem {
   label: string;
   path: string;
 }
 
-export default function Dropdown({
+export default function UserDropdown({
   token,
   items = [],
   onSelect,
@@ -23,6 +24,7 @@ export default function Dropdown({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<DropdownItem | null>(null);
+  console.log(selectedItem)
   const dispatch = useAppDispatch();
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -43,6 +45,7 @@ export default function Dropdown({
   const handleLogout = async () => {
     try {
       const response = await api.post("/auth/logout");
+      console.log("Logout response:", response.data);
       dispatch(logout());
       setIsOpen(false);
     } catch (error) {
@@ -78,7 +81,7 @@ export default function Dropdown({
               </Link>
             ))}
           </div>
-          <hr className={styles.divider} />
+          <Divider />
           <button onClick={handleLogout} className={styles.itemButton}>
             Cerrar sesion
           </button>

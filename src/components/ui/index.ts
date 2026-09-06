@@ -6,5 +6,6 @@ export { default as SearchInput } from "./SearchInput/index";
 export { default as Button } from "./Button/index";
 export { default as Badge } from "./Badge/index";
 export { default as InputPassword } from "./InputPassword/index";
+export { default as Divider } from "./Divider/index";
 
 export * from "./Card/index";

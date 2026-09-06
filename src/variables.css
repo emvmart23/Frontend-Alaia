@@ -2,6 +2,7 @@
   --font-primary: "Noto Serif", serif;
 
   --white: #ffffff;
+  --gray: #9ca3af;
   --primary: #65001e;
   --primary-foreground: #f7f3ead7;
 
@@ -16,6 +17,7 @@
   --accent: #c4a982;
 
   --ring: 0 0 0 1px var(--secondary);
+  --overlay-bg: #00000066;
   --overlay-spacing: 0.9rem;
 
   --font-normal: 400;
